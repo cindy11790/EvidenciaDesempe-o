@@ -39,4 +39,13 @@ while (continuar) {
         alert("Hora de entrada debe estar entre 0 y 24, y la hora de salida debe ser mayor que la hora de entrada.");
         continue; 
     }
+    const costo = calcularCosto(horaEntrada, horaSalida);
+    alert(`El costo total por el estacionamiento es: $${costo}`);
+
+    const respuesta = prompt("¿Desea calcular el costo para otro vehículo? (s/n):");
+    continuar = respuesta.toLowerCase() === 's';
 }
+
+
+
+main();
