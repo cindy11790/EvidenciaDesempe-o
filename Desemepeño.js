@@ -11,3 +11,16 @@ function iniciarSesion() {
         return false;
     }
 }
+
+
+function calcularCosto(horaEntrada, horaSalida) {
+    const duracion = horaSalida - horaEntrada;
+
+    if (duracion < 2) {
+        return duracion * 3000;
+    } else if (duracion <= 5) {
+        return duracion * 2500;
+    } else {
+        return duracion * 2000;
+    }
+}
