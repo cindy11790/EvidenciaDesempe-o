@@ -24,3 +24,9 @@ function calcularCosto(horaEntrada, horaSalida) {
         return duracion * 2000;
     }
 }
+function main() {
+    if (!iniciarSesion()) {
+        return;
+    }
+}
+   
