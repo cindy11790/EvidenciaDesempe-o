@@ -1,5 +1,5 @@
 function iniciarSesion() {
-    const usuario = prompt("Ingrese su nombre de usuario:");
+    const usuario = prompt("Ingrese su nombre de usuario:"); //capturar datos
     const contrasena = prompt("Ingrese su contraseña:");
 
     
