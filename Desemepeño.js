@@ -29,4 +29,14 @@ function main() {
         return;
     }
 }
-   
+let continuar = true;
+
+while (continuar) {
+    let horaEntrada = parseFloat(prompt("Ingrese la hora de entrada (en formato 24h):"));
+    let horaSalida = parseFloat(prompt("Ingrese la hora de salida (en formato 24h):"));
+
+    if (isNaN(horaEntrada) || isNaN(horaSalida) || horaEntrada < 0 || horaEntrada >= 24 || horaSalida <= horaEntrada || horaSalida > 24) {
+        alert("Hora de entrada debe estar entre 0 y 24, y la hora de salida debe ser mayor que la hora de entrada.");
+        continue; 
+    }
+}
